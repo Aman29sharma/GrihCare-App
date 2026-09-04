@@ -1,105 +1,212 @@
 # GrihaCare
 
-GrihaCare is a practical housing and home-services platform built around a simple idea: finding a place to live and finding reliable help for that place should not feel like two completely different problems.
+### Housing, Home Services and Trust — in one place.
 
-The project brings rental/PG discovery, verified service workers, bookings, user profiles, safety features and an AI-assisted chat experience into one platform.
+GrihaCare is a full-stack platform designed around a simple problem: finding an affordable place to stay and finding reliable help for that place are often treated as completely separate tasks.
 
-It is being developed as a full-stack project with an Android application, backend services and a web interface.
+A student may be searching for a PG. A working professional may need a private room. A family may need a maid, cook, electrician, plumber or driver. In each case, the user has to search, compare options, ask questions, verify people and finally make a decision.
 
----
+GrihaCare brings these everyday needs into one connected experience.
 
-## Why GrihaCare?
-
-Finding a room is usually easy to start and difficult to finish.
-
-You may find a listing but still have questions about the area, price, facilities, safety or the person managing it. The same problem exists with home services. A user may need a maid, cook, electrician, driver or plumber, but finding someone trustworthy is often based on scattered recommendations.
-
-GrihaCare tries to bring these everyday requirements into one place.
-
-The focus of the project is not just listing services, but making the overall process easier:
-
-**Discover → Compare → Verify → Communicate → Book → Review**
+The project combines an Android application, backend services and a web interface, with a focus on affordability, trust, convenience and safety.
 
 ---
 
-## What the Platform Includes
+## Demo Video
 
-### For Users
+[Watch the GrihaCare Demo](https://drive.google.com/file/d/1iKqM3wUbcU2KdbbH8Z72mMf7JCBCh-Pa/view?usp=drivesdk)
 
-- Browse PGs, private rooms and affordable rental options
-- Search properties by location and budget
-- View property details and basic facilities
-- Find domestic and home-service workers
-- Check ratings, experience and trust information
-- View verified worker profiles
-- Chat with the GrihaCare assistant
-- Book a property or service
-- Maintain a personal profile
-- View previous and active bookings
-- Use safety-focused features for new visits
+---
 
-### For Service Workers
+## The Problem
 
-The platform is designed to support workers such as:
+Finding accommodation is not only about finding a room.
 
-- Maids
-- Home cooks
-- Drivers
-- Electricians
-- Plumbers
-- Home cleaners
+A user may find a listing but still want to know:
 
-Worker profiles can contain information such as experience, pricing, ratings, verification status and trust score.
+- Is the rent within my budget?
+- Is the location suitable?
+- What facilities are available?
+- Is the listing genuine?
+- Who is managing the property?
+- Can I trust the person providing the service?
 
-### Trust and Safety
+The same problem appears when looking for home-service professionals.
 
-Trust is an important part of GrihaCare.
+Finding a maid, cook, driver, electrician or plumber often depends on personal references, scattered listings or informal recommendations.
 
-The application includes concepts such as:
+This creates a fragmented experience where users have to move between different sources for:
+
+**Discovery → Comparison → Verification → Communication → Booking → Review**
+
+GrihaCare is built to connect these steps.
+
+---
+
+## What is GrihaCare?
+
+GrihaCare is designed as a single platform where users can:
+
+1. Discover affordable accommodation
+2. Find home-service professionals
+3. Compare profiles and options
+4. Check trust-related information
+5. Communicate through chat
+6. Book a property or service
+7. Manage bookings and profile information
+8. Use safety-focused features during new visits
+
+The goal is not to create another listing application.
+
+The goal is to make the complete decision-making process easier.
+
+---
+
+# Main Features
+
+## 1. Accommodation Discovery
+
+Users can explore practical housing options such as:
+
+- PGs
+- Private rooms
+- 1RKs
+- Student accommodation
+- Budget-friendly monthly rentals
+
+Search and discovery are designed around common user requirements such as:
+
+- Location
+- Monthly budget
+- Type of stay
+- Furnishing
+- Parking
+- Family-friendly options
+
+The project focuses primarily on affordable and realistic rental scenarios rather than premium luxury properties.
+
+---
+
+## 2. Home Services
+
+GrihaCare also connects users with everyday service professionals.
+
+Supported service categories include:
+
+- Maid
+- Home Cook
+- Driver
+- Electrician
+- Plumber
+- Home Cleaner
+
+Worker profiles can include:
+
+- Name
+- Service category
+- Experience
+- Pricing
+- Rating
+- Trust Score
+- Verification status
+- Location
+
+This gives the user more context before starting a booking.
+
+---
+
+## 3. Trust and Verification
+
+Trust is one of the central ideas behind GrihaCare.
+
+The application includes a verification-oriented experience with features such as:
 
 - Mobile verification
 - Identity verification flow
-- Verified worker badges
+- Verified profile indicators
 - Trust Score
 - Ratings and reviews
-- First Visit / Safety Radar concepts
+- Safety-oriented visit features
 
-The identity verification screen currently represents a **demo KYC flow** for the project. It is not connected to the real UIDAI Aadhaar verification system.
+### Trust Score
+
+The Trust Score is intended to provide an easy-to-understand signal when comparing profiles.
+
+It can consider factors such as:
+
+- Identity verification
+- Mobile verification
+- Experience
+- Ratings
+- Reviews
+- Profile and location information
+
+The Trust Score is a supporting signal and should not be treated as a guarantee of a person's safety or reliability.
+
+### Important Note
+
+The identity verification shown in the current application is a **demo KYC flow for the project**.
+
+It is not connected to the real UIDAI Aadhaar verification infrastructure.
 
 ---
 
-## AI Assistant
+## 4. AI Assistant
 
-GrihaCare includes a conversational assistant that can help users with common housing and service-related questions.
+GrihaCare includes an AI-assisted conversational interface for housing and home-service related questions.
 
-Examples:
+Instead of navigating through multiple screens, users can describe what they need in normal language.
 
-- "Show me affordable PGs in Gwalior"
-- "I need a private room under ₹12,000"
-- "Find a maid near Andheri"
-- "What should I check before booking a room?"
-- "Which option is better for a student?"
+For example:
 
-The Android application sends the conversation to the GrihaCare backend, which handles the AI request.
+> "I am a student looking for a private room in Gwalior under ₹10,000 per month."
 
-The backend is designed so that the Anthropic API key is kept on the server instead of being placed directly inside the Android application.
+Other examples:
 
-For development without an API key, the backend can also respond using the project's demo/fallback logic.
+> "Show me affordable PGs in Gwalior."
+
+> "Find a maid near Andheri."
+
+> "What should I check before booking a room?"
+
+> "Which option would be better for a student?"
+
+The Android application communicates with the GrihaCare backend, and the backend handles the AI request.
+
+The API key is kept on the server side rather than being placed inside the Android application.
+
+For development environments where an AI API key is not configured, the backend also supports demo/fallback responses.
 
 ---
 
-## Project Structure
+# How GrihaCare Works
+
+A typical user journey looks like this:
 
 ```text
-GrihCare-App/
-│
-├── android-app/
-│   └── Android application
-│
-├── backend/
-│   └── Node.js / Express API
-│
-├── website/
-│   └── Web application
-│
-└── README.md
+                    GrihaCare
+                        |
+                     Login
+                        |
+                  OTP Verification
+                        |
+                      Home
+               _________|_________
+              |                   |
+          Accommodation       Home Services
+              |                   |
+        Search / Filter       Worker Search
+              |                   |
+        Property Details      Worker Profile
+              |                   |
+             Chat             Trust Score
+              |                   |
+              |              Verification
+              |                   |
+              |_________   _______|
+                        \ /
+                      Booking
+                        |
+                    Confirmation
+                        |
+                      Review
